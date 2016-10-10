@@ -1,7 +1,20 @@
 def game_loop():
     option = game_menu()
     if option == '1':
-        questions = read_questions()
+        try:
+            questions = read_questions()
+            x = 10 / 0
+        except IOError as e:
+            print "Error reading questions file: %s" % e
+            return
+        except ZeroDivisionError as e:
+            print "You can't divide by 0"
+            return
+        except:
+            print "Unexpected Exception"
+            return
+        finally:
+            return
         result = ask_questions(questions)
         display_result(result)
     elif option == '2':
