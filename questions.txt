@@ -1,2 +1,10 @@
-test flusha new line
-another new line
+Who are the best team in the UK
+Arsenal FC
+What is the capital of Ireland
+Dublin
+what is the capital of France
+Paris
+What is the captial of the UK
+London
+What is the captial of Spain
+Madrid
